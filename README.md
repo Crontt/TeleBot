@@ -4,7 +4,7 @@ const moment = require("moment");
 
 var token = readline.question(`[ ${moment().format("HH:mm:ss")} ] Token : `);
 
-const url = "https://api.yescoin.gold/game/collectCoin";
+const url = "https://api-backend.yescoin.gold/game/collectCoi";
 
 const headers = {
   Accept: "application/json, text/plain, */*",
@@ -23,8 +23,10 @@ const headers = {
   "Sec-Fetch-Dest": "empty",
   "Sec-Fetch-Mode": "cors",
   "Sec-Fetch-Site": "same-site",
+
   Token: token,
-  "User-Agent":    "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5OTMwNTU3NTIiLCJjaGF0SWQiOiI5OTMwNTU3NTIiLCJpYXQiOjE3MjUwNDAyMTgsImV4cCI6MTcyNzYzMjIxOCwicm9sZUF1dGhvcml6ZXMiOltdLCJ1c2VySWQiOjE3ODIyNDA1OTc1MTY0NDM2NDh9.EQdWeJDBHe8pELMT4hL6Jceaur700kQy81DvjMGgr08JhFPqfmH9Yy7lccTlLcFLESXa6gdxYtiuB4q4lBE8Jw",
+  "User-Agent":
+    "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5OTMwNTU3NTIiLCJjaGF0SWQiOiI5OTMwNTU3NTIiLCJpYXQiOjE3MjUwNDAyMTgsImV4cCI6MTcyNzYzMjIxOCwicm9sZUF1dGhvcml6ZXMiOltdLCJ1c2VySWQiOjE3ODIyNDA1OTc1MTY0NDM2NDh9.EQdWeJDBHe8pELMT4hL6Jceaur700kQy81DvjMGgr08JhFPqfmH9Yy7lccTlLcFLESXa6gdxYtiuB4q4lBE8Jw",
 };
 
 const data = 9;

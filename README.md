@@ -4,7 +4,7 @@ const moment = require("moment");
 
 var token = readline.question(`[ ${moment().format("HH:mm:ss")} ] Token : `);
 
-const url = "https://api-backend.yescoin.gold/game/collectCoi";
+const url = "https://api-backend.yescoin.gold/game/collectCoin";
 
 const headers = {
   Accept: "application/json, text/plain, */*",
